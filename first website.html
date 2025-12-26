@@ -1,0 +1,225 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Management System</title>
+
+    <!-- Internal CSS starts here -->
+    <style>
+        /* Basic styling for the whole page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styling */
+        header {
+            background: linear-gradient(to right, #7768a2, #0f2969);
+            color: black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .logo {
+            width: 200px;
+            vertical-align: middle;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style: none;
+            background-color: #0f2969;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main section */
+        section {
+            padding: 25px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #200202;
+            text-align: center;
+            padding: 5px;
+        }
+
+        th {
+            background-color: #006699;
+            color: white;
+        }
+
+        table tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* Form styling */
+        form {
+            background-color: #5fd1d5;
+            padding: 15px;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        /* Button styling */
+        .submit-btn {
+            background-color: #363a4f;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #8d4312;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            table, th, td {
+                font-size: 14px;
+            }
+
+            form {
+                width: 100%;
+            }
+        }
+
+        /* Headings underline */
+        h3 {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- Internal CSS ends here -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="Screenshot 2025-12-27 014410.png" alt="College Logo" class="logo">
+        <h1>JIIT - Student Information and Registration System</h1>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section>
+        <h2><em>Welcome to Student Information And Registration Portal</em></h2>
+        <p>This system allows students and teachers to view attendance, results, and course details easily.</p>
+
+        <h3>Department Courses</h3>
+        <ul>
+            <li>Computer Science and Engineering</li>
+            <li>Electronics and Communication</li>
+            <li>Information Technology</li>
+            <li>Mathematics and Computing</li>
+            <li>Robotics and Artificial Intelligence</li>
+        </ul>
+
+        <h3>Student Details Table</h3>
+        <table>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Attendance (%)</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Rahul Sharma</td>
+                <td>95%</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Priya Singh</td>
+                <td>90%</td>
+                <td>82</td>
+            </tr>
+        </table>
+
+        <h3>Admission Form</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name"><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter your email"><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" type="date"><br>
+
+            <label for="course">Course:</label>
+            <select id="course">
+                <option>Computer Science</option>
+                <option>Electronics and Communication</option>
+                <option>IT</option>
+                <option>Mathematics and Computing</option>
+                <option>Robotics and Artificial Intelligence</option>
+            </select><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" rows="3" cols="30" placeholder="Enter your feedback"></textarea><br>
+
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact us: info@jiit.com | Phone: +91 8923997402</p>
+        <p>&copy; 2025 JIIT. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
